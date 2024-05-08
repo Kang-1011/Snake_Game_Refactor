@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snakegame.controller.FruitOptionController">
+   <children>
+      <ImageView fx:id="fruitbg" fitHeight="760.0" fitWidth="1300.0" layoutY="-8.0" opacity="0.3" pickOnBounds="true">
+         <image>
+            <Image url="@fruitbg.jpg" />
+         </image>
+      </ImageView>
+       <Label fx:id="ftcolor" layoutX="533.0" layoutY="129.0" text="Fruit Color">
+           <font>
+               <Font name="Bell MT" size="50.0" />
+           </font>
+       </Label>
+       <RadioButton fx:id="appleButton" layoutX="535.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#switchFruit" text="Apple">
+           <font>
+               <Font name="Bookman Old Style" size="25.0" />
+           </font>
+           <toggleGroup>
+               <ToggleGroup fx:id="fruitGroup" />
+           </toggleGroup>
+       </RadioButton>
+       <RadioButton fx:id="limeButton" layoutX="535.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#switchFruit" text="Lime" toggleGroup="$fruitGroup">
+           <font>
+               <Font name="Bookman Old Style" size="25.0" />
+           </font>
+       </RadioButton>
+       <RadioButton fx:id="bananaButton" layoutX="534.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#switchFruit" text="Banana" toggleGroup="$fruitGroup">
+           <font>
+               <Font name="Bookman Old Style" size="25.0" />
+           </font>
+       </RadioButton>
+      <ImageView fx:id="backButton2" fitHeight="100.0" fitWidth="100.0" layoutX="1107.0" layoutY="597.0" onMouseClicked="#switchToOption" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@backbutton.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

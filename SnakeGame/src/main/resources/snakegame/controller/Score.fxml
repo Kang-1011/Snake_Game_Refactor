@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snakegame.controller.ScoreController">
+   <ImageView fitHeight="400.0" fitWidth="731.0" layoutX="-127.0" opacity="0.34" pickOnBounds="true">
+      <Image url="@../scorebg.jpg" />
+   </ImageView>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#89592c" height="264.0" layoutX="292.0" layoutY="69.0" stroke="#89592c" strokeType="INSIDE" width="244.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d7bba5" height="242.0" layoutX="303.0" layoutY="80.0" stroke="#d7bba5" strokeType="INSIDE" width="222.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b19f92" height="42.0" layoutX="342.0" layoutY="54.0" stroke="#8e7968" strokeLineCap="ROUND" strokeType="INSIDE" width="145.0" />
+   <VBox fx:id="scoreListContainer" layoutX="396.0" layoutY="99.0" prefHeight="220.0" prefWidth="34.0">
+      </VBox>
+   <Label layoutX="46.0" layoutY="80.0" text="Score Board">
+      <font>
+         <Font name="Harrington" size="40.0" />
+      </font>
+   </Label>
+   <Label layoutX="381.0" layoutY="62.0" text="Top 10">
+      <font>
+         <Font name="Bell MT" size="22.0" />
+      </font>
+   </Label>
+   <Label fx:id="scoresLabel" layoutX="51.0" layoutY="135.0" prefHeight="35.0" prefWidth="211.0">
+      <font>
+         <Font name="Bell MT" size="21.0" />
+      </font>
+   </Label>
+   <Button fx:id="exitButton" layoutX="356.0" layoutY="343.0" mnemonicParsing="false" onAction="#exitGame" text="Exit" textFill="WHITE">
+      <style>
+         -fx-background-color: rgba(152,211,164,0.5);
+      </style>
+      <font>
+         <Font name="Goudy Stout" size="19.0" />
+      </font>
+   </Button>
+</AnchorPane>

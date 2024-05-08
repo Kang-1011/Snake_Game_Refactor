@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="750.0" prefWidth="1300.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snakegame.controller.OptionController">
+   <children>
+      <ImageView fitHeight="763.0" fitWidth="1300.0" opacity="0.87" pickOnBounds="true">
+         <image>
+            <Image url="@optionbg.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="colorButton" layoutX="575.0" layoutY="170.0" mnemonicParsing="false" onAction="#switchToSelectColor" text="Color" textFill="#f2f0f0">
+         <style>
+            -fx-background-color: rgba(57, 59, 64, 0.9);
+         </style>
+         <font>
+            <Font name="Goudy Stout" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="fruitButton" layoutX="575.0" layoutY="272.0" mnemonicParsing="false" onAction="#switchToSelectFruit" text="Fruit" textFill="#f2f0f0">
+         <style>
+            -fx-background-color: rgba(57, 59, 64, 0.9);
+         </style>
+         <font>
+            <Font name="Goudy Stout" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="modeButton" layoutX="583.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchToSelectGameMode" text="Mode" textFill="#f2f0f0">
+         <style>
+            -fx-background-color: rgba(57, 59, 64, 0.9);
+         </style>
+         <font>
+            <Font name="Goudy Stout" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="optionLabel" layoutX="578.0" layoutY="54.0" text="Option">
+         <font>
+            <Font name="Bell MT" size="50.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="backButton5" fitHeight="100.0" fitWidth="100.0" layoutX="1132.0" layoutY="625.0" onMouseClicked="#switchToMainMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@backbutton.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

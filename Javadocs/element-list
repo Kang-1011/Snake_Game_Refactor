@@ -1,0 +1,9 @@
+module:com.example.snakegame
+snakegame
+snakegame.controller
+snakegame.model
+snakegame.model.object
+snakegame.model.object.food
+snakegame.model.object.gamemode
+snakegame.model.state
+snakegame.model.text

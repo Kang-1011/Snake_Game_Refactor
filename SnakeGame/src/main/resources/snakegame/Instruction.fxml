@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="infoPane" prefHeight="750.0" prefWidth="1300.0" style="-fx-background-color: rgba(150, 111, 51,0.5);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snakegame.controller.InfoController">
+    <children>
+        <ImageView fitHeight="616.0" fitWidth="746.0" layoutX="314.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@scene2bg.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="256.0" fitWidth="719.0" layoutX="190.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@scene2snake.png" />
+            </image>
+        </ImageView>
+      <ImageView fx:id="backButton3" fitHeight="100.0" fitWidth="100.0" layoutX="1116.0" layoutY="584.0" onMouseClicked="#switchToMainMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@backbutton.png" />
+         </image>
+      </ImageView>
+        <Label layoutX="537.0" layoutY="155.0" text="Instruction">
+            <font>
+                <Font name="Bell MT" size="49.0" />
+            </font>
+        </Label>
+        <Label fx:id="directionLabel" layoutX="381.0" layoutY="224.0" prefHeight="22.0" prefWidth="579.0" text="1. Press the up, down, right and left key to change the direction of the snake.">
+            <font>
+                <Font name="Book Antiqua" size="17.0" />
+            </font>
+        </Label>
+      <Label fx:id="obstaclesLabel" layoutX="381.0" layoutY="253.0" prefHeight="18.0" prefWidth="579.0" text="2. Control the snake to eat the selected fruits.">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font></Label>
+      <Label layoutX="381.0" layoutY="283.0" prefHeight="18.0" prefWidth="579.0" text="3. The snake size and score will increase by 1 upon eating the fruit.">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="appleLabel" layoutX="381.0" layoutY="313.0" prefHeight="22.0" prefWidth="579.0" text="4. Select different game modes in Option page:">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="336.0" prefHeight="22.0" prefWidth="136.0" text="a. Speed Increase">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="504.0" prefHeight="82.0" prefWidth="318.0" text="Snake Game" textFill="#795a0b">
+         <font>
+            <Font name="Blackadder ITC" size="71.0" />
+         </font>
+      </Label>
+      <Label layoutX="409.0" layoutY="364.0" prefHeight="18.0" prefWidth="539.0" text="Speed of the snake increase upon eating the fruit.">
+        <font>
+            <Font name="Book Antiqua" size="16.0" />
+        </font>
+      </Label>
+        <Label layoutX="395.0" layoutY="393.0" prefHeight="22.0" prefWidth="164.0" text="b. Snake Teleporter">
+            <font>
+                <Font name="Book Antiqua" size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="409.0" layoutY="423.0" prefHeight="18.0" prefWidth="539.0" text="Snake will teleport to another position upon eating the snake.">
+            <font>
+                <Font name="Book Antiqua" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="395.0" layoutY="448.0" prefHeight="22.0" prefWidth="164.0" text="c. Lizard Obstacles">
+            <font>
+                <Font name="Book Antiqua" size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="409.0" layoutY="478.0" prefHeight="18.0" prefWidth="539.0" text="Obstacles will be spawned upon eating the fruit.">
+            <font>
+                <Font name="Book Antiqua" size="16.0" />
+            </font>
+        </Label>
+
+    </children>
+</AnchorPane>
