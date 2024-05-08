@@ -1,11 +1,11 @@
 # README
 
 ---
-## Snake Game
-A Snake Game in Java. Using JavaFX and FXML to display the game.
+## Introduction
+This program is created for one of the coursework at the undergraduate level. It centres around the maintenance and expansion of the timeless arcade game, Snake. The objective is to refactor the provided code so that it is more maintainable and less prone to errors for future development following the design principles and patterns of maintainable software.
 
 ## Changes and Additional Features
-The game now allows users pick from **8 background colors and 3 fruits**. There are new game modes like **obstacles**, **teleporters**, and **speed boosts** that trigger when the snake eats fruit. The game includes a **pause and resume** function, providing users the ability to pause and resume gameplay. 
+The game now allows users to pick from **8 background colours and 3 fruits**. There are new game modes like **obstacles**, **teleporters**, and **speed boosts** that trigger when the snake eats fruit. The game includes a **pause and resume** function, providing users the ability to pause and resume gameplay. 
 
 ## Maintenance Made
 The game now uses the **Model View Controller (MVC)** design pattern, enhancing maintenance by reducing interdependence. The transition from Java Swing to JavaFX improved maintainability. JavaFX's FXML separates UI layout from application logic, and Scene Builder provides a visual layout tool for JavaFX, streamlining software development.
@@ -28,22 +28,6 @@ The Strategy method enables a class's behavior to change dynamically during runt
 ## Design Principles
 The program follows the **“Program to an interface, not an implementation”** principle by using interfaces to define system behavior. It also aligns with the **Interface Segregation Principle** by allowing users to select game modes, background, and fruits without forcing dependencies on interfaces they do not use. Moreover, the system also adheres to the **Single Responsibility Principle** where each class in the program performs only one specific task. The program also follows **“Favor composition over inheritance”** principle by building relationships between classes rather than relying heavily on inheritance.
 
-## Test Case
-```
-public class GameManagerTest {
-    @Test
-    public void testGameManager() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-        Constructor<GameManager> constructor = GameManager.class.getDeclaredConstructor();
-        constructor.setAccessible(true);
-
-        GameManager gameManager = constructor.newInstance();
-
-        assertNotNull(gameManager);
-
-        constructor.setAccessible(false);
-    }
-}
-```
 
 
 
